@@ -18,12 +18,21 @@ repositories {
 }
 
 dependencies {
+    // Starter
     implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'org.projectlombok:lombok'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // Tool
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    implementation 'org.projectlombok:lombok'
+
+    // JPA & DB
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+    runtimeOnly 'com.h2database:h2'
+
+    // Test
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
